@@ -1,0 +1,36 @@
+<br />
+	</div>
+</div>
+<div id="page-footer">
+	<div>
+		<div class="inner">
+
+		<ul class="linklist navlinks">
+			<li class="icon-home"><a href="{U_INDEX}" accesskey="h" title="{L_INDEX}">{L_INDEX}</a></li>
+				<!-- IF not S_IS_BOT -->
+					<!-- IF S_WATCH_FORUM_LINK --><li <!-- IF S_WATCHING_FORUM -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE}</a></li><!-- ENDIF -->
+					<!-- IF U_WATCH_TOPIC --><li <!-- IF S_WATCHING_TOPIC -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}">{L_WATCH_TOPIC}</a></li><!-- ENDIF -->
+					<!-- IF U_BOOKMARK_TOPIC --><li class="icon-bookmark"><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}">{L_BOOKMARK_TOPIC}</a></li><!-- ENDIF -->
+					<!-- IF U_BUMP_TOPIC --><li class="icon-bump"><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}">{L_BUMP_TOPIC}</a></li><!-- ENDIF -->
+				<!-- ENDIF -->
+			<li class="rightside" style="font-weight: normal;"><!-- IF not S_IS_BOT --><a href="{U_DELETE_COOKIES}">{L_DELETE_COOKIES}</a> &bull; <!-- ENDIF -->{S_TIMEZONE}</li>
+		</ul>
+		<ul class="linklist leftside">
+			<li class="<!-- IF U_ACP -->icon-ucp<!-- ELSE -->icon-team<!-- ENDIF -->"><!-- IF U_ACP --><a href="{U_ACP}"><strong>{L_ACP}</strong></a>  &bull; <!-- ENDIF --><!-- IF U_TEAM --><a href="{U_TEAM}">{L_THE_TEAM}</a><!-- ENDIF --><!-- IF TRANSLATION_INFO --> &bull; {TRANSLATION_INFO}<!-- ENDIF --><!-- IF DEBUG_OUTPUT --> &bull; {DEBUG_OUTPUT}<!-- ENDIF --> &bull; 
+			Dirty Board 2.0 Style by <a href="http://www.cosa-nostra-design.com/" title="Pimp your style phpBB3!"><strong>CoSa NoStrA DeSiGn</strong></a> and <a href="http://www.suportephpbb.com.br"><strong>Vinny</strong></a></li>
+		</ul>
+		</div>
+	</div>
+<div style="clear: both;"></div>
+
+	<div>
+		<a class="copyright" href="https://www.phpbb.com/" title="Powered by phpBB&reg; Forum Software &copy; phpBB Group">phpBB</a>
+		<a href="{U_INDEX}" id="small-logo_link" title="{SITENAME}">{SITENAME}</a>
+		<a class="footer_js" id="footer" name="footer" accesskey="z" href="#header" title="{L_BACK_TO_TOP}">{L_BACK_TO_TOP}</a>
+		<a href="http://www.cosa-nostra-design.com/" id="link_home" title="Cosa Nostra Design - Pimp your style phpBB3!">Visit my Home</a>
+	</div>
+	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+</div>
+
+</body>
+</html>
